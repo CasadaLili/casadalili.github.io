@@ -11,8 +11,13 @@ sitemap: false
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
+      // Cross-domain setup: this admin page lives on github.io
+      // but Identity + Git Gateway run on a Netlify project.
+      // Netlify site name MUST be: casadalili-cms
+      window.netlifyIdentity && window.netlifyIdentity.init({
+        APIUrl: "https://casadalili-cms.netlify.app/.netlify/identity"
+      });
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
@@ -23,5 +28,6 @@ sitemap: false
         });
       }
     </script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
