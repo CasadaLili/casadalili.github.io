@@ -81,42 +81,6 @@
         </div>
     </section>
 
-    <!-- Photo Gallery -->
-    <section class="photo-gallery-section">
-        <div class="container">
-            <h2 class="section-title">{{ d.gallery.title }}</h2>
-            <div class="section-divider"></div>
-            <div class="carousel-wrapper">
-                <button class="carousel-btn carousel-prev" aria-label="{{ d.gallery.prev_label }}">&#8592;</button>
-                <div class="carousel-viewport">
-                    <div class="carousel-track" id="carouselTrack">
-                        {% for photo in site.data.gallery.photos %}
-                        <img src="{{ photo.src }}" alt="{% if d.lang == 'pt' %}{{ photo.alt_pt }}{% else %}{{ photo.alt_en }}{% endif %}">
-                        {% endfor %}
-                    </div>
-                </div>
-                <button class="carousel-btn carousel-next" aria-label="{{ d.gallery.next_label }}">&#8594;</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who is it for -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">{{ d.audience.title }}</h2>
-            <div class="section-divider"></div>
-            <div class="audience-grid">
-                {% for card in d.audience.cards %}
-                <div class="audience-card" data-reveal="fade-up" data-reveal-delay="{{ forloop.index }}">
-                    <span class="audience-icon">&#10047;</span>
-                    <h3>{{ card.heading }}</h3>
-                    <p>{{ card.text }}</p>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-
     <!-- Um Dia Aqui / A Day Here -->
     <section class="day-section">
         <div class="container">
@@ -149,6 +113,42 @@
                     <div class="timeline-dot-col"><div class="timeline-dot"></div></div>
                     <div class="timeline-image"><img src="{{ step.image }}" alt="{{ step.image_alt }}"></div>
                     {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery-section">
+        <div class="container">
+            <h2 class="section-title">{{ d.gallery.title }}</h2>
+            <div class="section-divider"></div>
+            <div class="carousel-wrapper">
+                <button class="carousel-btn carousel-prev" aria-label="{{ d.gallery.prev_label }}">&#8592;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        {% for photo in site.data.gallery.photos %}
+                        <img src="{{ photo.src }}" alt="{% if d.lang == 'pt' %}{{ photo.alt_pt }}{% else %}{{ photo.alt_en }}{% endif %}">
+                        {% endfor %}
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-next" aria-label="{{ d.gallery.next_label }}">&#8594;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who is it for -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">{{ d.audience.title }}</h2>
+            <div class="section-divider"></div>
+            <div class="audience-grid">
+                {% for card in d.audience.cards %}
+                <div class="audience-card" data-reveal="fade-up" data-reveal-delay="{{ forloop.index }}">
+                    <span class="audience-icon">&#10047;</span>
+                    <h3>{{ card.heading }}</h3>
+                    <p>{{ card.text }}</p>
                 </div>
                 {% endfor %}
             </div>
