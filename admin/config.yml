@@ -40,6 +40,8 @@ collections:
             fields:
               - { label: "ID Sobre (não alterar)", name: "about_id", widget: "hidden", default: "sobre" }
               - { label: "Rótulo Sobre", name: "about_label", widget: "string" }
+              - { label: "URL Sobre Mim (não alterar)", name: "about_me_url", widget: "hidden", default: "sobre-mim.html" }
+              - { label: "Rótulo Sobre Mim", name: "about_me_label", widget: "string" }
               - { label: "ID Programas (não alterar)", name: "programmes_id", widget: "hidden", default: "programas" }
               - { label: "Rótulo Programas", name: "programmes_label", widget: "string" }
               - { label: "ID Terapias (não alterar)", name: "therapies_id", widget: "hidden", default: "terapias" }
@@ -191,6 +193,19 @@ collections:
               - { label: "Frase do rodapé", name: "quote", widget: "string" }
               - { label: "Aviso de copyright", name: "copyright", widget: "string" }
 
+          - label: "Página Sobre Mim"
+            name: "about_me"
+            widget: "object"
+            fields:
+              - { label: "Título da aba do navegador", name: "meta_title", widget: "string" }
+              - { label: "Descrição (Google)", name: "meta_description", widget: "text" }
+              - { label: "Título da página", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - { label: "Foto / Retrato", name: "portrait", widget: "image" }
+              - { label: "Descrição da foto (acessibilidade)", name: "portrait_alt", widget: "string" }
+              - { label: "Parágrafos do texto", name: "paragraphs", widget: "list", field: { label: "Parágrafo", name: "paragraph", widget: "text" } }
+              - { label: "Despedida (assinatura)", name: "closing", widget: "text", required: false, hint: "Ex: Com carinho,\nLili" }
+
   # ============================================================
   # ENGLISH
   # ============================================================
@@ -223,6 +238,8 @@ collections:
             fields:
               - { label: "About ID (do not change)", name: "about_id", widget: "hidden", default: "about" }
               - { label: "About label", name: "about_label", widget: "string" }
+              - { label: "About Me URL (do not change)", name: "about_me_url", widget: "hidden", default: "about-me.html" }
+              - { label: "About Me label", name: "about_me_label", widget: "string" }
               - { label: "Programmes ID (do not change)", name: "programmes_id", widget: "hidden", default: "programmes" }
               - { label: "Programmes label", name: "programmes_label", widget: "string" }
               - { label: "Therapies ID (do not change)", name: "therapies_id", widget: "hidden", default: "therapies" }
@@ -373,6 +390,19 @@ collections:
             fields:
               - { label: "Footer quote", name: "quote", widget: "string" }
               - { label: "Copyright notice", name: "copyright", widget: "string" }
+
+          - label: "About Me Page"
+            name: "about_me"
+            widget: "object"
+            fields:
+              - { label: "Browser tab title", name: "meta_title", widget: "string" }
+              - { label: "Description (Google)", name: "meta_description", widget: "text" }
+              - { label: "Page title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Photo / Portrait", name: "portrait", widget: "image" }
+              - { label: "Photo description (accessibility)", name: "portrait_alt", widget: "string" }
+              - { label: "Body paragraphs", name: "paragraphs", widget: "list", field: { label: "Paragraph", name: "paragraph", widget: "text" } }
+              - { label: "Closing (signature)", name: "closing", widget: "text", required: false, hint: "E.g: With warmth,\nLili" }
 
   # ============================================================
   # PARTILHADO / SHARED

@@ -6,6 +6,8 @@ meta:
 nav:
   about_id: about
   about_label: "About"
+  about_me_url: "about-me.html"
+  about_me_label: "About Me"
   programmes_id: programmes
   programmes_label: "Programmes"
   therapies_id: therapies
@@ -176,3 +178,16 @@ contact:
 footer:
   quote: "Caring for yourself begins where time slows down."
   copyright: "© 2026 Casa da Lili. All rights reserved."
+
+about_me:
+  meta_title: "About Me — Casa da Lili"
+  meta_description: "Meet the person behind Casa da Lili."
+  title: "About Me"
+  subtitle: "Meet the person behind Casa da Lili"
+  portrait: "img/meditation-chakras.jpg"
+  portrait_alt: "Lili in meditation"
+  paragraphs:
+    - "Hello, I'm Lili. (Placeholder text — I'll share my story here soon.)"
+    - "For now, this section is just a space being held. Here I'll tell you about the path that brought me to this place, my background, and the way I receive each person who arrives at Casa da Lili."
+    - "I believe care begins in a simple presence, an attentive gaze, an unhurried gesture. That is what I try to offer with every stay."
+  closing: "With warmth,\nLili"

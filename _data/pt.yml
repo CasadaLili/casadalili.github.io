@@ -6,6 +6,8 @@ meta:
 nav:
   about_id: sobre
   about_label: "Sobre"
+  about_me_url: "sobre-mim.html"
+  about_me_label: "Sobre Mim"
   programmes_id: programas
   programmes_label: "Programas"
   therapies_id: terapias
@@ -176,3 +178,16 @@ contact:
 footer:
   quote: "Cuidar de si começa onde o tempo abranda."
   copyright: "© 2026 Casa da Lili. Todos os direitos reservados."
+
+about_me:
+  meta_title: "Sobre Mim — Casa da Lili"
+  meta_description: "Conheça quem acolhe na Casa da Lili."
+  title: "Sobre Mim"
+  subtitle: "Conheça quem acolhe na Casa da Lili"
+  portrait: "img/meditation-chakras.jpg"
+  portrait_alt: "Lili em meditação"
+  paragraphs:
+    - "Olá, sou a Lili. (Texto provisório — em breve vou partilhar aqui a minha história.)"
+    - "Esta secção é, por agora, um espaço reservado. Aqui irei contar o caminho que me trouxe até este lugar, a minha formação, e a forma como recebo cada pessoa que chega à Casa da Lili."
+    - "Acredito que cuidar começa numa presença simples, num olhar atento, num gesto que não tem pressa. É isso que tento oferecer em cada estadia."
+  closing: "Com carinho,\nLili"

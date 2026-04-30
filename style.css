@@ -639,3 +639,62 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; }
     text-align: center;
 }
 .therapy-card h3 { text-align: center; }
+/* === ABOUT ME PAGE === */
+.about-me-hero {
+    padding: 8rem 0 2rem;
+    text-align: center;
+    background: #FDFCFA;
+}
+.about-me-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #2A7F6F;
+    margin-bottom: 0.5rem;
+}
+.about-me-subtitle {
+    font-size: 1.2rem;
+    color: #636E72;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.about-me-section {
+    padding: 3rem 0 6rem;
+    background: #FDFCFA;
+}
+.about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+}
+.about-me-portrait img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(42, 127, 111, 0.18);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+.about-me-text p {
+    font-size: 1.1rem;
+    color: #2D3436;
+    line-height: 1.85;
+    margin-bottom: 1.4rem;
+}
+.about-me-closing {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.3rem !important;
+    color: #2A7F6F;
+    margin-top: 2rem !important;
+    white-space: pre-line;
+}
+.nav-links a.active {
+    color: #2A7F6F;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .about-me-hero { padding: 6rem 0 1.5rem; }
+    .about-me-title { font-size: 2.5rem; }
+    .about-me-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-me-portrait img { max-width: 320px; margin: 0 auto; }
+}

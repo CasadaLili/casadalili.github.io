@@ -1,0 +1,94 @@
+{% assign d = site.data[page.data] %}
+<!DOCTYPE html>
+<html lang="{{ d.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ d.about_me.meta_description }}">
+    <title>{{ d.about_me.meta_title }}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://portwally.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    {% if d.lang == 'pt' %}
+      {% assign home = "index.html" %}
+    {% else %}
+      {% assign home = "en.html" %}
+    {% endif %}
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ home }}" class="nav-logo">Casa da Lili</a>
+            <ul class="nav-links">
+                <li><a href="{{ home }}#{{ d.nav.about_id }}">{{ d.nav.about_label }}</a></li>
+                <li><a href="{{ d.nav.about_me_url }}" class="active">{{ d.nav.about_me_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.programmes_id }}">{{ d.nav.programmes_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.therapies_id }}">{{ d.nav.therapies_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.contact_id }}" class="nav-cta">{{ d.nav.contact_label }}</a></li>
+            </ul>
+            <div class="lang-switcher">
+                {% if d.lang == 'pt' %}
+                <a href="sobre-mim.html" class="lang-btn active">PT</a>
+                <a href="about-me.html" class="lang-btn">EN</a>
+                {% else %}
+                <a href="sobre-mim.html" class="lang-btn">PT</a>
+                <a href="about-me.html" class="lang-btn active">EN</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Hero -->
+    <section class="about-me-hero">
+        <div class="container">
+            <h1 class="about-me-title">{{ d.about_me.title }}</h1>
+            <p class="about-me-subtitle">{{ d.about_me.subtitle }}</p>
+            <div class="section-divider"></div>
+        </div>
+    </section>
+
+    <!-- About Me Body -->
+    <section class="about-me-section">
+        <div class="container">
+            <div class="about-me-grid">
+                <div class="about-me-portrait" data-reveal="fade-left">
+                    <img src="{{ d.about_me.portrait }}" alt="{{ d.about_me.portrait_alt }}">
+                </div>
+                <div class="about-me-text">
+                    {% for paragraph in d.about_me.paragraphs %}
+                    <p data-reveal="fade-right" data-reveal-delay="{{ forloop.index }}">{{ paragraph }}</p>
+                    {% endfor %}
+                    {% if d.about_me.closing %}
+                    <p class="about-me-closing" data-reveal="fade-up">{{ d.about_me.closing | newline_to_br }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-quote">{{ d.footer.quote }}</p>
+            <p class="footer-copy">{{ d.footer.copyright }}</p>
+        </div>
+    </footer>
+
+    <script>
+    // Scroll Reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
