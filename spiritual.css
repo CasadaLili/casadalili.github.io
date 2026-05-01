@@ -1,0 +1,286 @@
+/* ============================================================
+   SPIRITUAL THEME OVERRIDES
+   Loaded AFTER style.css to override the base palette.
+   To revert: remove the <link> reference in _layouts/page.html
+   and _layouts/about.html, then delete this file.
+   ============================================================ */
+
+:root {
+    --sp-indigo: #2D1B4E;
+    --sp-purple: #5B3A89;
+    --sp-violet: #8E5BC4;
+    --sp-amber: #D4A574;
+    --sp-gold: #F2D49B;
+    --sp-cream: #FDF5E8;
+    --sp-warm-text: #3A2E1F;
+    --sp-warm-text-soft: #5C4D3D;
+}
+
+/* === GLOBAL BACKGROUND & TEXT === */
+body {
+    background:
+        radial-gradient(ellipse at top, rgba(212, 165, 116, 0.18) 0%, transparent 60%),
+        radial-gradient(ellipse at bottom, rgba(142, 91, 196, 0.10) 0%, transparent 60%),
+        linear-gradient(180deg, #FDF5E8 0%, #F8E9D2 50%, #FDF5E8 100%);
+    background-attachment: fixed;
+    color: var(--sp-warm-text);
+}
+
+p, .lead-text, .step-text, .program-desc, .program-list li,
+.audience-card p, .therapy-card p {
+    color: var(--sp-warm-text);
+}
+.lead-text { color: var(--sp-warm-text-soft); }
+
+/* === HEADINGS WITH GRADIENT TEXT === */
+.section-title {
+    background: linear-gradient(135deg, var(--sp-indigo) 0%, var(--sp-violet) 50%, var(--sp-amber) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.section-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--sp-violet) 50%, transparent 100%);
+    width: 120px; height: 2px;
+}
+
+h3 { color: var(--sp-indigo); }
+.audience-card h3, .program-card h3, .therapy-card h3 { color: var(--sp-indigo); }
+.place-fragment-heading { color: var(--sp-violet); }
+
+/* === SECTION ALTERNATIVES — soft amber gradients === */
+.section-alt, .place-section, .day-section, .photo-gallery-section {
+    background: linear-gradient(180deg, #F4E5D5 0%, #FBF1E0 50%, #F4E5D5 100%);
+    position: relative;
+}
+
+/* === NAVBAR === */
+.navbar {
+    background: rgba(253, 245, 232, 0.88);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(91, 58, 137, 0.12);
+}
+.nav-logo {
+    background: linear-gradient(135deg, var(--sp-indigo) 0%, var(--sp-violet) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.nav-links a { color: var(--sp-indigo); }
+.nav-links a:hover { color: var(--sp-violet); }
+.nav-links a.active { color: var(--sp-violet); font-weight: 600; }
+.nav-cta {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 16px rgba(91, 58, 137, 0.25);
+}
+.nav-cta:hover {
+    background: linear-gradient(135deg, var(--sp-amber) 0%, var(--sp-violet) 100%);
+    box-shadow: 0 6px 22px rgba(91, 58, 137, 0.35), 0 0 24px rgba(212, 165, 116, 0.3);
+}
+
+/* === HERO === */
+.hero-overlay {
+    background: linear-gradient(135deg,
+        rgba(45, 27, 78, 0.6) 0%,
+        rgba(91, 58, 137, 0.45) 35%,
+        rgba(212, 165, 116, 0.5) 100%
+    );
+}
+.hero-title {
+    background: linear-gradient(135deg, #FDF5E8 0%, #F2D49B 50%, #FDF5E8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 30px rgba(255, 215, 150, 0.3);
+}
+.hero-subtitle, .hero-tagline { color: var(--sp-cream); }
+.hero-btn {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream);
+    border: none;
+    box-shadow: 0 8px 28px rgba(91, 58, 137, 0.4), 0 0 40px rgba(212, 165, 116, 0.25);
+    transition: all 0.4s ease;
+}
+.hero-btn:hover {
+    background: linear-gradient(135deg, var(--sp-amber) 0%, var(--sp-violet) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(91, 58, 137, 0.5), 0 0 50px rgba(212, 165, 116, 0.4);
+}
+.scroll-indicator { color: var(--sp-gold); }
+
+/* === LANG SWITCHER === */
+.lang-btn { color: var(--sp-indigo); border-color: rgba(91, 58, 137, 0.25); }
+.lang-btn.active {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream);
+    border-color: transparent;
+}
+
+/* === CARDS — soft glow on hover === */
+.audience-card, .program-card, .therapy-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 234, 210, 0.55) 100%);
+    border: 1px solid rgba(91, 58, 137, 0.15);
+    box-shadow: 0 8px 28px rgba(91, 58, 137, 0.08);
+    transition: all 0.4s ease;
+}
+.audience-card:hover, .program-card:hover, .therapy-card:hover {
+    box-shadow: 0 14px 42px rgba(91, 58, 137, 0.18), 0 0 32px rgba(212, 165, 116, 0.18);
+    transform: translateY(-5px);
+    border-color: rgba(212, 165, 116, 0.3);
+}
+.audience-icon, .therapy-icon {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(212, 165, 116, 0.4));
+}
+
+/* === FEATURED PROGRAMME === */
+.program-card.featured {
+    border: 2px solid transparent;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 234, 210, 0.75) 100%) padding-box,
+        linear-gradient(135deg, var(--sp-violet), var(--sp-amber)) border-box;
+    box-shadow: 0 12px 36px rgba(91, 58, 137, 0.18), 0 0 40px rgba(212, 165, 116, 0.2);
+}
+.program-badge {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream);
+    box-shadow: 0 4px 14px rgba(91, 58, 137, 0.3);
+}
+.program-duration { color: var(--sp-violet); }
+.program-price { color: var(--sp-indigo); }
+
+/* === TIMELINE === */
+.timeline-dot {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    box-shadow: 0 0 0 4px rgba(91, 58, 137, 0.15), 0 0 24px rgba(212, 165, 116, 0.4);
+}
+.step-number { color: var(--sp-violet); }
+.step-heading { color: var(--sp-indigo); }
+.timeline::before {
+    background: linear-gradient(180deg, transparent 0%, var(--sp-violet) 20%, var(--sp-amber) 80%, transparent 100%);
+    opacity: 0.4;
+}
+
+/* === CAROUSEL === */
+.carousel-btn {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream);
+    border: none;
+    box-shadow: 0 4px 14px rgba(91, 58, 137, 0.3);
+}
+.carousel-btn:hover {
+    box-shadow: 0 6px 20px rgba(91, 58, 137, 0.4), 0 0 24px rgba(212, 165, 116, 0.3);
+}
+
+/* === QUOTE BANNER === */
+.quote-banner-overlay {
+    background: linear-gradient(135deg,
+        rgba(45, 27, 78, 0.6) 0%,
+        rgba(91, 58, 137, 0.45) 50%,
+        rgba(212, 165, 116, 0.45) 100%
+    );
+}
+
+/* === TESTIMONIALS — dark cosmic === */
+.testimonials-section {
+    background:
+        radial-gradient(circle at 25% 30%, rgba(212, 165, 116, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 75% 70%, rgba(142, 91, 196, 0.28) 0%, transparent 45%),
+        linear-gradient(135deg, #2D1B4E 0%, #5B3A89 50%, #6B4099 100%);
+    position: relative;
+    overflow: hidden;
+}
+.testimonials-section .section-title {
+    background: linear-gradient(135deg, #FDF5E8 0%, #F2D49B 50%, #FDF5E8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.testimonials-section .section-divider {
+    background: linear-gradient(90deg, transparent 0%, var(--sp-gold) 50%, transparent 100%);
+}
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(242, 212, 155, 0.22);
+}
+.testimonial-card p, .testimonial-text { color: var(--sp-cream); }
+.testimonial-cite { color: var(--sp-gold); }
+.testimonial-quote-mark { color: var(--sp-gold); opacity: 0.7; }
+
+/* === APPROACH === */
+.approach-highlight {
+    background: linear-gradient(135deg, var(--sp-indigo) 0%, var(--sp-violet) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+/* === CONTACT === */
+.contact-label { color: var(--sp-violet); }
+.contact-item a { color: var(--sp-indigo); }
+.contact-item a:hover { color: var(--sp-amber); }
+
+/* === FOOTER — rich indigo === */
+.footer {
+    background: linear-gradient(180deg, var(--sp-indigo) 0%, #1A0F2E 100%);
+    color: var(--sp-gold);
+}
+.footer-quote, .footer-copy { color: var(--sp-gold); }
+.footer-quote { opacity: 0.95; }
+.footer-copy { opacity: 0.6; }
+
+/* === ABOUT ME PAGE === */
+.about-me-hero {
+    background:
+        radial-gradient(circle at 50% 0%, rgba(212, 165, 116, 0.2) 0%, transparent 60%),
+        linear-gradient(180deg, #FDF5E8 0%, #F4E5D5 100%);
+}
+.about-me-section {
+    background: linear-gradient(180deg, #F4E5D5 0%, #FDF5E8 100%);
+}
+.about-me-title {
+    background: linear-gradient(135deg, var(--sp-indigo) 0%, var(--sp-violet) 50%, var(--sp-amber) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.about-me-subtitle { color: var(--sp-warm-text-soft); }
+.about-me-portrait img {
+    box-shadow: 0 16px 50px rgba(91, 58, 137, 0.25), 0 0 40px rgba(212, 165, 116, 0.2);
+}
+.about-me-text p { color: var(--sp-warm-text); }
+.about-me-closing {
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+
+/* === LIGHTBOX === */
+.lightbox { background: rgba(26, 15, 46, 0.95); }
+
+/* === SUBTLE ANIMATIONS === */
+@keyframes sp-float-glow {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+.timeline-dot {
+    animation: sp-float-glow 4s ease-in-out infinite;
+}
+.audience-icon, .therapy-icon {
+    transition: filter 0.4s ease;
+}
+.audience-card:hover .audience-icon,
+.therapy-card:hover .therapy-icon {
+    filter: drop-shadow(0 2px 14px rgba(212, 165, 116, 0.7));
+}
