@@ -603,7 +603,7 @@ h1, h2, h3 { font-family: 'Cormorant Garamond', Georgia, serif; }
 .quote-banner {
     position: relative;
     min-height: 400px;
-    background-image: url('img/view-sea.jpg');
+    background-image: url('img/view-sunset.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
