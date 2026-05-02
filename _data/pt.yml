@@ -115,12 +115,12 @@ programmes:
       description: Mais tempo para desacelerar, escutar o corpo e aprofundar o processo.
       includes:
         - Estadia em quarto privado (1 noite)
-        - Pequeno-almoço e refeição principal por dia
-        - 2 caminhadas na natureza
-        - 2 sessões terapêuticas individuais
-        - 2 momentos de yoga, respiração ou meditação
+        - Pequeno almoço e refeições leves
+        - Caminhada na natureza
+        - Sessões terapêuticas individuais
+        - Momentos de yoga, respiração ou meditação
         - Conversa de integração ao final da estadia
-      price: A partir de €[XX]
+      price: A partir de 180€
       featured: true
       badge: Mais Popular
     - duration: 3 Dias
@@ -128,12 +128,12 @@ programmes:
       description: Uma experiência profunda de regeneração, pausa e cuidado integral.
       includes:
         - Estadia em quarto privado (2 noites)
-        - Pequeno-almoço e refeição principal por dia
+        - Alimentação consciente(refeições incluídas)
         - Caminhadas na natureza + manhã de silêncio
         - 3 sessões terapêuticas individuais
         - Práticas diárias de yoga, respiração e meditação
         - Sessão de encerramento e integração final
-      price: A partir de €[XX]
+      price: A partir de 300€
       featured: false
       badge: ""
 therapies:
