@@ -1,0 +1,9 @@
+# Netlify is used ONLY for Identity + Git Gateway services.
+# The visitor-facing site is on GitHub Pages.
+# This config skips the Netlify build entirely so the project deploys
+# successfully and Identity can be enabled.
+
+[build]
+  command = "echo 'Skipping build — visitor site is on GitHub Pages'"
+  publish = "."
+  ignore = "/bin/false"
