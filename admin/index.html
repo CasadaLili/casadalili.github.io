@@ -13,19 +13,32 @@ sitemap: false
 <body>
     <script>
       // Cross-domain setup: this admin page lives on github.io
-      // but Identity + Git Gateway run on a Netlify project.
-      // Netlify site name MUST be: casadalili-cms
-      window.netlifyIdentity && window.netlifyIdentity.init({
-        APIUrl: "https://casadalili-cms.netlify.app/.netlify/identity"
-      });
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
+      // but Identity + Git Gateway run on a Netlify project (casadalili-cms).
+      //
+      // The widget script auto-calls init() with no args on DOMContentLoaded,
+      // which defaults APIUrl to location.origin/.netlify/identity (= github.io,
+      // which 404s). We must re-init AFTER that auto-init has run, so our URL
+      // is the one that sticks. addEventListener handlers fire in order, and
+      // the widget's handler is registered first, so ours runs after.
+      var IDENTITY_API = "https://casadalili-cms.netlify.app/.netlify/identity";
+
+      function bootIdentity() {
+        if (!window.netlifyIdentity) return;
+        window.netlifyIdentity.init({ APIUrl: IDENTITY_API });
+        window.netlifyIdentity.on("init", function(user) {
           if (!user) {
-            window.netlifyIdentity.on("login", () => {
+            window.netlifyIdentity.on("login", function() {
               document.location.href = "/admin/";
             });
           }
         });
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", bootIdentity);
+      } else {
+        // DOM already parsed — run on next tick so widget's own handlers settle.
+        setTimeout(bootIdentity, 0);
       }
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
