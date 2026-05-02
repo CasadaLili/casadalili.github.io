@@ -3,6 +3,5 @@ description: Programa de Estadia de Bem-Estar
 exclude:
   - README.md
   - .github
-  - admin/config.yml
   - .DS_Store
 plugins: []
