@@ -73,20 +73,14 @@ day:
       heading: Movimento e respiração
       text: Uma prática suave de yoga ou respiração no terraço — com a vista do mar
         como pano de fundo.
-      image: img/yoga-meditation.jpg
-      image_alt: Meditação com chakras alinhados, em ambiente sereno
+      image: img/elixir-bottle.jpg
+      image_alt: Frasco de elixir com lavanda, vela e cristais
     - time: Tarde
       heading: Caminhada na natureza
       text: Um percurso tranquilo pelos caminhos da aldeia ou junto ao litoral. Sem
         destino obrigatório.
       image: img/nature-walk.jpg
       image_alt: Caminhada na natureza por caminhos de pedra
-    - time: Meio da Tarde
-      heading: Ritual e elixir
-      text: Um pequeno ritual com ervas, velas e cristais — gestos simples que
-        afinam o corpo e a presença antes da sessão terapêutica.
-      image: img/elixir-bottle.jpg
-      image_alt: Frasco de elixir com lavanda, vela e cristais
     - time: Final da Tarde
       heading: Sessão terapêutica
       text: Um momento só para si — Reiki, massagem, terapia ou meditação, conforme o
@@ -111,8 +105,8 @@ programmes:
         - Acolhimento e conversa inicial
         - Pequeno-almoço e uma refeição principal
         - Caminhada suave na natureza
-        - 1 sessão terapêutica individual
-        - 1 momento de yoga, respiração ou meditação
+        - Sessão terapêutica individual
+        - Momento de yoga, respiração ou meditação
       price: A partir de 90€
       featured: false
       badge: ""
