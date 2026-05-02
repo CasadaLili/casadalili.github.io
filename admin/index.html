@@ -17,29 +17,31 @@ sitemap: false
       //
       // The widget script auto-calls init() with no args on DOMContentLoaded,
       // which defaults APIUrl to location.origin/.netlify/identity (= github.io,
-      // which 404s). We must re-init AFTER that auto-init has run, so our URL
-      // is the one that sticks. addEventListener handlers fire in order, and
-      // the widget's handler is registered first, so ours runs after.
-      var IDENTITY_API = "https://casadalili-cms.netlify.app/.netlify/identity";
-
-      function bootIdentity() {
-        if (!window.netlifyIdentity) return;
-        window.netlifyIdentity.init({ APIUrl: IDENTITY_API });
-        window.netlifyIdentity.on("init", function(user) {
+      // which 404s). It also auto-opens with no args when the URL contains an
+      // #invite_token=... fragment, before any DOMContentLoaded handler we
+      // could register fires.
+      //
+      // Robust fix: monkey-patch netlifyIdentity.init() right after the widget
+      // script loads, so EVERY call to init (the widget's own auto-init, plus
+      // any later call from Decap CMS) always receives our cross-domain APIUrl.
+      (function() {
+        var IDENTITY_API = "https://casadalili-cms.netlify.app/.netlify/identity";
+        var ni = window.netlifyIdentity;
+        if (!ni || typeof ni.init !== "function") return;
+        var originalInit = ni.init;
+        ni.init = function(options) {
+          options = options || {};
+          options.APIUrl = IDENTITY_API;
+          return originalInit.call(ni, options);
+        };
+        ni.on("init", function(user) {
           if (!user) {
-            window.netlifyIdentity.on("login", function() {
+            ni.on("login", function() {
               document.location.href = "/admin/";
             });
           }
         });
-      }
-
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", bootIdentity);
-      } else {
-        // DOM already parsed — run on next tick so widget's own handlers settle.
-        setTimeout(bootIdentity, 0);
-      }
+      })();
     </script>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
