@@ -194,9 +194,9 @@ contact:
   title: Reservas e Contacto
   lead: Para reservar a sua estadia ou esclarecer qualquer dúvida, entre em
     contacto connosco.
-  email_label: casadalili@gmail.com
+  email_label: casadalili.bemestar@gmail.com
   phone_label: " +351 966789248"
-  instagram_label: "@casadalili.bem estar"
+  instagram_label: "@casadalili.bemestar"
 footer:
   quote: Cuidar de si começa onde o tempo abranda.
   copyright: © 2026 Casa da Lili. Todos os direitos reservados.
@@ -208,13 +208,26 @@ about_me:
   portrait: img/meditation-chakras.jpg
   portrait_alt: Lili em meditação
   paragraphs:
-    - Olá, sou a Lili. (Texto provisório — em breve vou partilhar aqui a minha
-      história.)
-    - Esta secção é, por agora, um espaço reservado. Aqui irei contar o caminho
-      que me trouxe até este lugar, a minha formação, e a forma como recebo cada
-      pessoa que chega à Casa da Lili.
-    - Acredito que cuidar começa numa presença simples, num olhar atento, num
-      gesto que não tem pressa. É isso que tento oferecer em cada estadia.
+    - >-
+      A Casa da Lili nasceu do desejo de criar um espaço simples, onde seja
+      possível abrandar, respirar e voltar a si.
+
+
+      Sou a Lili, terapeuta holística, e ao longo do meu percurso fui aprendendo que o verdadeiro cuidado começa na escuta — do corpo, das emoções e do ritmo de cada pessoa.
+    - A minha própria jornada trouxe-me até aqui. Entre desafios, pausas e
+      transformações, fui percebendo a importância de criar um lugar onde não é
+      preciso “fazer”, apenas estar. Um espaço onde se pode chegar como se está,
+      sem expectativas.
+    - >-
+      Na Casa da Lili, recebo cada pessoa de forma individual, num ambiente de
+      partilha tranquila, onde o acompanhamento é feito com presença,
+      sensibilidade e respeito pelo tempo de cada um.
+
+
+      Acredito que cuidar começa numa presença simples, num olhar atento, num gesto que não tem pressa. É isso que tento oferecer em cada estadia.
+
+
+      Este é um lugar onde pode pousar, respirar e, aos poucos, voltar a casa — dentro de si.
   closing: |-
     Com carinho,
     Lili
