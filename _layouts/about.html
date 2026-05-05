@@ -16,8 +16,14 @@
 <body>
     {% if d.lang == 'pt' %}
       {% assign home = "index.html" %}
-    {% else %}
+    {% elsif d.lang == 'en' %}
       {% assign home = "en.html" %}
+    {% elsif d.lang == 'es' %}
+      {% assign home = "es.html" %}
+    {% elsif d.lang == 'fr' %}
+      {% assign home = "fr.html" %}
+    {% else %}
+      {% assign home = "de.html" %}
     {% endif %}
 
     <!-- Navigation -->
@@ -32,13 +38,11 @@
                 <li><a href="{{ home }}#{{ d.nav.contact_id }}" class="nav-cta">{{ d.nav.contact_label }}</a></li>
             </ul>
             <div class="lang-switcher">
-                {% if d.lang == 'pt' %}
-                <a href="sobre-mim.html" class="lang-btn active">PT</a>
-                <a href="about-me.html" class="lang-btn">EN</a>
-                {% else %}
-                <a href="sobre-mim.html" class="lang-btn">PT</a>
-                <a href="about-me.html" class="lang-btn active">EN</a>
-                {% endif %}
+                <a href="sobre-mim.html" class="lang-btn{% if d.lang == 'pt' %} active{% endif %}">PT</a>
+                <a href="about-me.html"  class="lang-btn{% if d.lang == 'en' %} active{% endif %}">EN</a>
+                <a href="sobre-mi.html"  class="lang-btn{% if d.lang == 'es' %} active{% endif %}">ES</a>
+                <a href="sur-moi.html"   class="lang-btn{% if d.lang == 'fr' %} active{% endif %}">FR</a>
+                <a href="uber-mich.html" class="lang-btn{% if d.lang == 'de' %} active{% endif %}">DE</a>
             </div>
         </div>
     </nav>

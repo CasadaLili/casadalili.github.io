@@ -1,0 +1,222 @@
+lang: de
+meta:
+  title: "Casa da Lili — Wohlbefinden zwischen Bergen und Meer"
+  description: "Casa da Lili — Wellness-Aufenthaltsprogramm. Eine Erfahrung der Pause, der Fürsorge und der Wiederverbindung zwischen Bergen und Meer."
+
+nav:
+  about_id: ueber-uns
+  about_label: "Über Uns"
+  about_me_url: "uber-mich.html"
+  about_me_label: "Über Mich"
+  programmes_id: programme
+  programmes_label: "Programme"
+  therapies_id: therapien
+  therapies_label: "Therapien"
+  contact_id: kontakt
+  contact_label: "Buchen"
+
+hero:
+  title: "Casa da Lili"
+  subtitle: "Wellness-Aufenthaltsprogramm"
+  tagline_line1: "Eine Erfahrung der Pause, der Fürsorge und der Wiederverbindung,"
+  tagline_line2: "in einer ruhigen Umgebung zwischen Bergen und Meer."
+  cta: "Unsere Programme Entdecken"
+
+about:
+  title: "Willkommen in Casa da Lili"
+  lead: "Dieses Programm wurde für Menschen konzipiert, die das Bedürfnis verspüren, innezuhalten, sich auszuruhen und bewusster für sich zu sorgen."
+  body: "Während des gesamten Aufenthalts wird jede Person in ihrem eigenen Tempo empfangen, mit Raum für Stille, Natur, Erholung und therapeutische Begleitung. Die Erfahrung verbindet einfache, aber zutiefst bedeutungsvolle Momente: Ruhe, Naturwanderungen, nährendes Essen, Achtsamkeitspraktiken und auf die Bedürfnisse jeder Person abgestimmte Therapien."
+
+place:
+  title: "Der Ort"
+  image: "img/terrace-lavender.jpg"
+  image_alt: "Terrasse mit Lavendel und Meerblick"
+  fragments:
+    - heading: "Zwischen Bergen und Meer"
+      text: "Das Haus liegt in einem ruhigen Dorf, umgeben von Natur und nur wenige Minuten vom Atlantik entfernt."
+    - heading: "Ein anderes Tempo"
+      text: "Hier verlangsamt sich die Zeit. Es gibt keinen aufgezwungenen Zeitplan — nur Präsenz."
+    - heading: "Stille, die erneuert"
+      text: "Die Stille des Hauses ist keine Leere — sie ist der Beginn von etwas."
+
+gallery:
+  title: "Das Haus"
+  prev_label: "Zurück"
+  next_label: "Weiter"
+
+audience:
+  title: "Für Wen Ist Dieses Programm?"
+  cards:
+    - heading: "Erschöpfung"
+      text: "Für Menschen, die unter beruflicher Erschöpfung oder Burnout leiden und eine echte Auszeit brauchen."
+    - heading: "Lebensübergänge"
+      text: "Für Menschen, die große Veränderungen durchleben — Karrierewechsel, Beziehungsende, Trauer — und Raum brauchen, um sich neu zu orientieren."
+    - heading: "Emotionale Erschöpfung"
+      text: "Für Menschen, die das angesammelte Gewicht des Alltags mit sich tragen und Spannungen auf achtsame Weise lösen möchten."
+    - heading: "Wiederverbindung"
+      text: "Für Menschen, die einfach das Gefühl haben, dass es an der Zeit ist, mit mehr Präsenz und Tiefe für sich selbst zu sorgen."
+
+day:
+  title: "Ein Tag Hier"
+  steps:
+    - time: "Morgen"
+      heading: "Ankunft und Empfang"
+      text: "Ihre Auszeit beginnt mit einem ruhigen Gespräch, einem selbstgemachten Frühstück und aller Zeit, die Sie brauchen, um ohne Eile anzukommen."
+      image: "img/house-entrance.jpg"
+      image_alt: "Hauseingang"
+    - time: "Vormittag"
+      heading: "Bewegung und Atem"
+      text: "Eine sanfte Yoga- oder Atemübungseinheit auf der Terrasse — mit dem Meer als Kulisse."
+      image: "img/elixir-bottle.jpg"
+      image_alt: "Elixierflasche mit Lavendel, Kerze und Kristallen"
+    - time: "Nachmittag"
+      heading: "Spaziergang in der Natur"
+      text: "Ein ruhiger Spaziergang auf den Wegen des Dorfes oder entlang der Küste. Ohne vorgegebenes Ziel."
+      image: "img/nature-walk.jpg"
+      image_alt: "Wanderung auf gepflasterten Naturpfaden"
+    - time: "Später Nachmittag"
+      heading: "Therapeutische Sitzung"
+      text: "Ein Moment nur für Sie — Reiki, Massage, Therapie oder Meditation, je nach Ihren Bedürfnissen."
+      image: "img/therapy-session.jpg"
+      image_alt: "Therapeutische Sitzung in einer einladenden Umgebung"
+    - time: "Abend"
+      heading: "Abendessen und Stille"
+      text: "Ein nährendes Mahl, und dann Stille. Das Haus hält Sie, während der Tag zu Ende geht."
+      image: "img/interior-lounge.jpg"
+      image_alt: "Wohnzimmer"
+
+programmes:
+  title: "Unsere Programme"
+  lead: "Drei Aufenthaltsoptionen, jede mit einer anderen Tiefe. Alle Programme sind personalisiert."
+  items:
+    - duration: "1 Tag"
+      title: "Wohlbefindenpause"
+      description: "Ein kurzes, aber bedeutungsvolles Erlebnis für Menschen, die anhalten und aufatmen müssen."
+      includes:
+        - "Empfang und erstes Gespräch"
+        - "Frühstück und eine Hauptmahlzeit"
+        - "Sanfter Naturspaziergang"
+        - "Individuelle therapeutische Sitzung"
+        - "Yoga-, Atem- oder Meditationssitzung"
+      price: "Ab 90 €"
+      featured: false
+      badge: ""
+    - duration: "2 Tage"
+      title: "Wiederverbindungsaufenthalt"
+      description: "Mehr Zeit, um zu entschleunigen, auf den Körper zu hören und den Prozess zu vertiefen."
+      includes:
+        - "Privatzimmer (1 Nacht)"
+        - "Frühstück und leichte Mahlzeiten"
+        - "Naturspaziergang"
+        - "Individuelle therapeutische Sitzungen"
+        - "Yoga-, Atem- oder Meditationssitzungen"
+        - "Integrationsgespräch am Ende des Aufenthalts"
+      price: "Ab 180 €"
+      featured: true
+      badge: "Am Beliebtesten"
+    - duration: "3 Tage"
+      title: "Vertiefungsimmersion für Fürsorge und Präsenz"
+      description: "Eine tiefgreifende Erfahrung der Regeneration, Pause und ganzheitlichen Fürsorge."
+      includes:
+        - "Privatzimmer (2 Nächte)"
+        - "Bewusste Ernährung (Mahlzeiten inbegriffen)"
+        - "Naturwanderungen + stiller Morgen"
+        - "Individuelle therapeutische Sitzungen"
+        - "Tägliche Yoga-, Atem- und Meditationspraxis"
+        - "Abschluss- und Integrationssitzung"
+      price: "Ab 300 €"
+      featured: false
+      badge: ""
+
+therapies:
+  title: "Unsere Therapien"
+  lead: "Jede Sitzung wird gemeinsam mit dem Gast ausgewählt, basierend auf seinen Bedürfnissen und Vorlieben."
+  items:
+    - icon: "✦"
+      title: "Reiki"
+      description: "Eine japanische Energieheilungstechnik, die durch die Kanalisierung von Energie über die Hände das körperliche, emotionale und spirituelle Gleichgewicht fördert."
+    - icon: "◈"
+      title: "Ayurvedische Massage"
+      description: "Eine therapeutische Massage, die in der traditionellen indischen Medizin verwurzelt ist und warme Öle sowie spezifische Bewegungen verwendet, um Spannungen zu lösen."
+    - icon: "⬡"
+      title: "Multidimensionale Therapie"
+      description: "Ein ganzheitlicher Ansatz, der auf verschiedenen Energieebenen arbeitet und Körper, Geist und Emotionen integriert, um tiefe Heilung zu fördern."
+    - icon: "❧"
+      title: "Yoga und Atemarbeit"
+      description: "Sanfte Bewegungs- und Atemübungen, die das Nervensystem beruhigen und das Körperbewusstsein und die Präsenz fördern."
+    - icon: "◎"
+      title: "Meditation"
+      description: "Geführte Achtsamkeitspraxis, die innere Ruhe, mentale Klarheit und die Fähigkeit zu urteilen ohne zu bewerten kultiviert."
+
+testimonials:
+  title: "Stimmen unserer Gäste"
+  items:
+    - text: "Es war eine Erfahrung, die mich zu mir selbst zurückgebracht hat. Die Stille, die Natur, die Wärme von allem… alles ergab Sinn. Ich ging leichter und mit einer Klarheit fort, die ich seit Monaten nicht mehr hatte."
+      cite: "Gast, 2-Tages-Programm"
+    - text: "Ich hätte nie gedacht, dass drei Tage meine Perspektive so tiefgreifend verändern könnten. Die Fürsorge, mit der ich empfangen wurde, war anders als alles, was ich kannte."
+      cite: "Gast, 3-Tages-Programm"
+    - text: "Ich kam zum Ausruhen und ging mit einem Gefühl tiefer Erneuerung. Das Gleichgewicht zwischen Therapien, Natur und Stille war perfekt."
+      cite: "Gast, 1-Tages-Programm"
+
+approach:
+  title: "Unser Ansatz"
+  paragraphs:
+    - "In Casa da Lili wird Wohlbefinden auf einfache, menschliche und persönliche Weise empfangen. Die umgebende Natur, die Stille des Hauses, der Blick über den Atlantik und der entschleunigte Rhythmus des Aufenthalts sind wesentliche Teile der Erfahrung."
+    - "Die therapeutische Begleitung erfolgt mit aufmerksamem Zuhören, Präsenz und Respekt für den Moment jeder Person. Mehr als ein festes Programm ist dies eine Einladung zur bewussten Fürsorge."
+  highlight: "Casa da Lili folgt keinem starren oder massenproduzierten Format. Jeder Aufenthalt wird intim, einfach und angepasst an den Lebensmoment jedes Gastes erlebt."
+
+quote_banner:
+  text: "Für sich selbst zu sorgen ist kein Luxus. Es ist der Beginn von allem."
+
+contact:
+  title: "Buchungen und Kontakt"
+  lead: "Um Ihren Aufenthalt zu buchen oder Fragen zu stellen, nehmen Sie bitte Kontakt auf."
+  email_label: "E-Mail"
+  phone_label: "Telefon"
+  instagram_label: "Instagram"
+  form_heading: "Schreiben Sie uns"
+  form_name_label: "Ihr Name"
+  form_email_label: "Ihre E-Mail"
+  form_phone_label: "Telefon (optional)"
+  form_message_label: "Ihre Nachricht"
+  form_submit: "Anfrage senden"
+  form_success: "Vielen Dank für Ihre Nachricht! Wir melden uns in Kürze."
+  form_error: "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+
+footer:
+  quote: "Für sich selbst zu sorgen beginnt dort, wo die Zeit verlangsamt."
+  copyright: "© 2026 Casa da Lili. Alle Rechte vorbehalten."
+
+about_me:
+  meta_title: "Über Mich — Casa da Lili"
+  meta_description: "Lernen Sie die Person kennen, die Sie in Casa da Lili willkommen heißt."
+  title: "Über Mich"
+  subtitle: "Lernen Sie die Person kennen, die Sie in Casa da Lili willkommen heißt"
+  portrait: "img/meditation-chakras.jpg"
+  portrait_alt: "Lili in Meditation"
+  paragraphs:
+    - >-
+      Casa da Lili entstand aus dem Wunsch heraus, einen einfachen Raum zu
+      schaffen, in dem es möglich ist, zu entschleunigen, zu atmen und zu sich
+      selbst zurückzukehren.
+
+
+      Ich bin Lili, ganzheitliche Therapeutin, und auf meinem Weg habe ich
+      gelernt, dass echte Fürsorge im Zuhören beginnt — dem Körper, den
+      Emotionen und dem Rhythmus jeder Person.
+    - "Mein eigener Weg hat mich hierher geführt. Zwischen Herausforderungen, Pausen und Transformationen habe ich die Bedeutung erkannt, einen Ort zu schaffen, an dem man nicht 'tun' muss — nur sein. Einen Raum, an dem man genau so ankommen kann, wie man ist, ohne Erwartungen."
+    - >-
+      In Casa da Lili empfange ich jeden Menschen individuell, in einer
+      Atmosphäre der Ruhe und des stillen Austauschs, in der die Begleitung mit
+      Präsenz, Einfühlungsvermögen und Respekt vor dem Tempo jedes Einzelnen
+      angeboten wird.
+
+
+      Ich glaube, dass Fürsorge in einer einfachen Präsenz beginnt, einem
+      aufmerksamen Blick, einer Geste ohne Eile. Das ist es, was ich bei jedem
+      Aufenthalt anzubieten versuche.
+
+
+      Dies ist ein Ort, an dem Sie landen, atmen und nach und nach nach Hause
+      kommen können — in sich selbst.
+  closing: "Mit Herzlichkeit,\nLili"

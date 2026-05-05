@@ -29,13 +29,11 @@
                 <li><a href="#{{ d.nav.contact_id }}" class="nav-cta">{{ d.nav.contact_label }}</a></li>
             </ul>
             <div class="lang-switcher">
-                {% if d.lang == 'pt' %}
-                <a href="index.html" class="lang-btn active">PT</a>
-                <a href="en.html" class="lang-btn">EN</a>
-                {% else %}
-                <a href="index.html" class="lang-btn">PT</a>
-                <a href="en.html" class="lang-btn active">EN</a>
-                {% endif %}
+                <a href="index.html" class="lang-btn{% if d.lang == 'pt' %} active{% endif %}">PT</a>
+                <a href="en.html"    class="lang-btn{% if d.lang == 'en' %} active{% endif %}">EN</a>
+                <a href="es.html"    class="lang-btn{% if d.lang == 'es' %} active{% endif %}">ES</a>
+                <a href="fr.html"    class="lang-btn{% if d.lang == 'fr' %} active{% endif %}">FR</a>
+                <a href="de.html"    class="lang-btn{% if d.lang == 'de' %} active{% endif %}">DE</a>
             </div>
         </div>
     </nav>
