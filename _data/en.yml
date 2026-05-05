@@ -67,18 +67,13 @@ day:
     - time: "Mid-Morning"
       heading: "Movement and breath"
       text: "A gentle yoga or breathwork session on the terrace, with the sea as your backdrop."
-      image: "img/yoga-meditation.jpg"
-      image_alt: "Meditation with aligned chakras in a serene setting"
+      image: "img/elixir-bottle.jpg"
+      image_alt: "Apothecary bottle with lavender, candle and crystals"
     - time: "Afternoon"
       heading: "Walk in nature"
       text: "A quiet walk through the village paths or along the coastline. No fixed destination required."
       image: "img/nature-walk.jpg"
       image_alt: "Walking through stone-paved nature paths"
-    - time: "Mid-Afternoon"
-      heading: "Ritual and elixir"
-      text: "A small ritual with herbs, candles and crystals — simple gestures that tune the body and presence before the therapeutic session."
-      image: "img/elixir-bottle.jpg"
-      image_alt: "Apothecary bottle with lavender, candle and crystals"
     - time: "Late Afternoon"
       heading: "Therapeutic session"
       text: "A moment just for you — Reiki, massage, therapy or meditation, depending on what you need."
@@ -101,9 +96,9 @@ programmes:
         - "Welcome and initial conversation"
         - "Breakfast and one main meal"
         - "Gentle nature walk"
-        - "1 individual therapeutic session"
-        - "1 yoga, breathwork or meditation session"
-      price: "From €[XX]"
+        - "Individual therapeutic session"
+        - "Yoga, breathwork or meditation session"
+      price: "From €90"
       featured: false
       badge: ""
     - duration: "2 Days"
@@ -111,12 +106,12 @@ programmes:
       description: "More time to slow down, listen to your body and deepen the process."
       includes:
         - "Private room (1 night)"
-        - "Breakfast and one main meal per day"
-        - "2 nature walks"
-        - "2 individual therapeutic sessions"
-        - "2 yoga, breathwork or meditation sessions"
+        - "Breakfast and light meals"
+        - "Nature walk"
+        - "Individual therapeutic sessions"
+        - "Yoga, breathwork or meditation sessions"
         - "Integration conversation at the end of the stay"
-      price: "From €[XX]"
+      price: "From €180"
       featured: true
       badge: "Most Popular"
     - duration: "3 Days"
@@ -124,12 +119,12 @@ programmes:
       description: "A profound experience of regeneration, pause and holistic care."
       includes:
         - "Private room (2 nights)"
-        - "Breakfast and one main meal per day"
-        - "Nature walks + optional silent morning"
-        - "3 individual therapeutic sessions"
+        - "Mindful nourishment (meals included)"
+        - "Nature walks + silent morning"
+        - "Individual therapeutic sessions"
         - "Daily yoga, breathwork and meditation"
         - "Closing and integration session"
-      price: "From €[XX]"
+      price: "From €300"
       featured: false
       badge: ""
 
@@ -186,13 +181,34 @@ footer:
 
 about_me:
   meta_title: "About Me — Casa da Lili"
-  meta_description: "Meet the person behind Casa da Lili."
+  meta_description: "Meet the person who welcomes you at Casa da Lili."
   title: "About Me"
-  subtitle: "Meet the person behind Casa da Lili"
+  subtitle: "Meet the person who welcomes you at Casa da Lili"
   portrait: "img/meditation-chakras.jpg"
   portrait_alt: "Lili in meditation"
   paragraphs:
-    - "Hello, I'm Lili. (Placeholder text — I'll share my story here soon.)"
-    - "For now, this section is just a space being held. Here I'll tell you about the path that brought me to this place, my background, and the way I receive each person who arrives at Casa da Lili."
-    - "I believe care begins in a simple presence, an attentive gaze, an unhurried gesture. That is what I try to offer with every stay."
+    - >-
+      Casa da Lili was born from the desire to create a simple space where it
+      is possible to slow down, breathe and return to yourself.
+
+
+      I am Lili, a holistic therapist, and along my journey I have learned that
+      true care begins in listening — to the body, the emotions and the rhythm
+      of each person.
+    - "My own journey brought me here. Between challenges, pauses and
+      transformations, I came to understand the importance of creating a place
+      where you don't need to 'do' — just be. A space where you can arrive
+      exactly as you are, without expectations."
+    - >-
+      At Casa da Lili, I welcome each person individually, in an atmosphere of
+      calm and quiet sharing, where the support is offered with presence,
+      sensitivity and respect for each person's timing.
+
+
+      I believe care begins in a simple presence, an attentive gaze, an
+      unhurried gesture. That is what I try to offer in every stay.
+
+
+      This is a place where you can land, breathe and, little by little, come
+      home — within yourself.
   closing: "With warmth,\nLili"
