@@ -266,6 +266,105 @@ h3 { color: var(--sp-indigo); }
     color: transparent !important;
 }
 
+/* === CONTACT FORM === */
+.contact-form-wrapper {
+    margin-top: 3.5rem;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact-form-heading {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--sp-indigo);
+    margin-bottom: 2rem;
+}
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+@media (max-width: 600px) {
+    .form-row { grid-template-columns: 1fr; }
+}
+.form-group {
+    margin-bottom: 1.25rem;
+}
+.form-group label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sp-violet);
+    margin-bottom: 0.4rem;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(91, 58, 137, 0.25);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--sp-warm-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--sp-violet);
+    box-shadow: 0 0 0 3px rgba(91, 58, 137, 0.12);
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+.form-submit {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: linear-gradient(135deg, var(--sp-violet) 0%, var(--sp-amber) 100%);
+    color: var(--sp-cream);
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 28px rgba(91, 58, 137, 0.3);
+    transition: all 0.4s ease;
+    margin-top: 0.5rem;
+}
+.form-submit:hover {
+    background: linear-gradient(135deg, var(--sp-amber) 0%, var(--sp-violet) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 36px rgba(91, 58, 137, 0.4);
+}
+.form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+.form-feedback {
+    display: none;
+    text-align: center;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.form-success {
+    color: var(--sp-violet);
+    background: rgba(91, 58, 137, 0.07);
+    font-weight: 500;
+}
+.form-error {
+    color: #a93226;
+    background: rgba(169, 50, 38, 0.07);
+}
+
 /* === LIGHTBOX === */
 .lightbox { background: rgba(26, 15, 46, 0.95); }
 

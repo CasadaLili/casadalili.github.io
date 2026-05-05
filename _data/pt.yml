@@ -197,6 +197,14 @@ contact:
   email_label: Email
   phone_label: Telefone
   instagram_label: Instagram
+  form_heading: Envie-nos uma mensagem
+  form_name_label: O seu nome
+  form_email_label: O seu email
+  form_phone_label: Telefone (opcional)
+  form_message_label: A sua mensagem
+  form_submit: Enviar pedido
+  form_success: Obrigada pela sua mensagem! Entraremos em contacto brevemente.
+  form_error: Ocorreu um erro. Por favor tente novamente ou contacte-nos directamente.
 footer:
   quote: Cuidar de si começa onde o tempo abranda.
   copyright: © 2026 Casa da Lili. Todos os direitos reservados.
