@@ -307,6 +307,13 @@
         <div class="container">
             <p class="footer-quote">{{ d.footer.quote }}</p>
             <p class="footer-copy">{{ d.footer.copyright }}</p>
+            <p class="footer-legal">
+                {% if d.lang == 'pt' %}
+                    <a href="politica-privacidade.html">Política de Privacidade</a> · <a href="termos-condicoes.html">Termos &amp; Condições</a>
+                {% else %}
+                    <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-conditions.html">Terms &amp; Conditions</a>
+                {% endif %}
+            </p>
         </div>
     </footer>
 

@@ -1,0 +1,80 @@
+{% assign lang = page.lang %}
+{% if lang == 'pt' %}
+  {% assign home = "index.html" %}
+  {% assign about_url = "sobre-mim.html" %}
+  {% assign d = site.data.pt %}
+  {% assign privacy_url = "politica-privacidade.html" %}
+  {% assign terms_url = "termos-condicoes.html" %}
+  {% assign privacy_label = "Política de Privacidade" %}
+  {% assign terms_label = "Termos & Condições" %}
+{% else %}
+  {% assign home = "en.html" %}
+  {% assign about_url = "about-me.html" %}
+  {% assign d = site.data.en %}
+  {% assign privacy_url = "privacy-policy.html" %}
+  {% assign terms_url = "terms-conditions.html" %}
+  {% assign privacy_label = "Privacy Policy" %}
+  {% assign terms_label = "Terms & Conditions" %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>{{ page.title }} — Casa da Lili</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spiritual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://portwally.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{{ home }}" class="nav-logo">Casa da Lili</a>
+            <ul class="nav-links">
+                <li><a href="{{ home }}#{{ d.nav.about_id }}">{{ d.nav.about_label }}</a></li>
+                <li><a href="{{ about_url }}">{{ d.nav.about_me_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.programmes_id }}">{{ d.nav.programmes_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.therapies_id }}">{{ d.nav.therapies_label }}</a></li>
+                <li><a href="{{ home }}#{{ d.nav.contact_id }}" class="nav-cta">{{ d.nav.contact_label }}</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <a href="{{ page.pt_url }}" class="lang-btn{% if lang == 'pt' %} active{% endif %}">PT</a>
+                <a href="{{ page.en_url }}" class="lang-btn{% if lang == 'en' %} active{% endif %}">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="about-me-hero">
+        <div class="container">
+            <h1 class="about-me-title">{{ page.title }}</h1>
+            <div class="section-divider"></div>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <section class="about-me-section">
+        <div class="container">
+            <div class="legal-content">
+                {{ content }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-quote">{{ d.footer.quote }}</p>
+            <p class="footer-copy">{{ d.footer.copyright }}</p>
+            <p class="footer-legal">
+                <a href="{{ privacy_url }}">{{ privacy_label }}</a> · <a href="{{ terms_url }}">{{ terms_label }}</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

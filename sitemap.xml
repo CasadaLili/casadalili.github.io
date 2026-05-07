@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home pages (all languages) -->
+  <url>
+    <loc>https://casadalili.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/es.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/fr.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/de.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/es.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/de.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Me pages (all languages) -->
+  <url>
+    <loc>https://casadalili.github.io/sobre-mim.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/sur-moi.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/uber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/sobre-mim.html"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/about-me.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/sur-moi.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/uber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/sobre-mim.html"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/sobre-mi.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/sur-moi.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/uber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/sobre-mim.html"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/sur-moi.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/sur-moi.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/uber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/sobre-mim.html"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casadalili.github.io/uber-mich.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casadalili.github.io/sobre-mim.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casadalili.github.io/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://casadalili.github.io/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casadalili.github.io/sur-moi.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casadalili.github.io/uber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casadalili.github.io/sobre-mim.html"/>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
