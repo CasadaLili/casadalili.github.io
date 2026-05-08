@@ -107,7 +107,7 @@ programmes:
         - Caminhada suave na natureza
         - Sessão terapêutica individual
         - Momento de yoga, respiração ou meditação
-      price: A partir de 90€
+      price: 111€(valor de lançamento)
       featured: false
       badge: ""
     - duration: 2 Dias
@@ -115,12 +115,12 @@ programmes:
       description: Mais tempo para desacelerar, escutar o corpo e aprofundar o processo.
       includes:
         - Estadia em quarto privado (1 noite)
-        - Pequeno almoço e refeições leves
+        - Pequeno almoço & refeições leves
         - Caminhada na natureza
         - Sessões terapêuticas individuais
         - Momentos de yoga, respiração ou meditação
         - Conversa de integração ao final da estadia
-      price: A partir de 180€
+      price: A partir de 240€
       featured: true
       badge: Mais Popular
     - duration: 3 Dias
@@ -128,12 +128,12 @@ programmes:
       description: Uma experiência profunda de regeneração, pausa e cuidado integral.
       includes:
         - Estadia em quarto privado (2 noites)
-        - Alimentação consciente(refeições incluídas)
+        - Alimentação consciente
         - Caminhadas na natureza + manhã de silêncio
         - Sessões terapêuticas individuais
         - Práticas diárias de yoga, respiração e meditação
         - Sessão de encerramento e integração final
-      price: A partir de 300€
+      price: A partir de 360€
       featured: false
       badge: ""
 therapies:
@@ -191,20 +191,20 @@ approach:
 quote_banner:
   text: Cuidar de si não é um luxo. É o começo de tudo.
 contact:
-  title: Reservas e Contacto
-  lead: Para reservar a sua estadia ou esclarecer qualquer dúvida, entre em
-    contacto connosco.
-  email_label: Email
+  form_message_label: A sua mensagem
   phone_label: Telefone
   instagram_label: Instagram
   form_heading: Envie-nos uma mensagem
-  form_name_label: O seu nome
-  form_email_label: O seu email
   form_phone_label: Telefone (opcional)
-  form_message_label: A sua mensagem
-  form_submit: Enviar pedido
   form_success: Obrigada pela sua mensagem! Entraremos em contacto brevemente.
   form_error: Ocorreu um erro. Por favor tente novamente ou contacte-nos directamente.
+  email_label: Email
+  form_submit: Enviar pedido
+  form_email_label: O seu email
+  title: Reservas e Contacto
+  form_name_label: O seu nome
+  lead: Para reservar a sua estadia ou esclarecer qualquer dúvida, entre em
+    contacto connosco.
 footer:
   quote: Cuidar de si começa onde o tempo abranda.
   copyright: © 2026 Casa da Lili. Todos os direitos reservados.
